@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container p-2 ">
+        <h1 class="text-secondary">BOB CALCULATOR</h1>
+        <!-- <div class="text-right pr-2 pt-1 border border-dark mb-2 mt-2 bg-dark text-light"> -->
+            <input type="text" class="calculator-screen text-right mb-2 mt-2 pr-1 bg-dark text-light " disabled>   
+        <!-- </div> -->
+        <div class="calc">
+            <form class="calcForm ">
+               <div class="row mb-1">
+                   <div class="col ">
+                       <button class="myBtn form-control btn-danger all-clear" id="clr">clr</button>
+                   </div>
+                   <div class="col">
+                       <button class="myBtn form-control btn-warning del" id="del">del</button>
+                   </div>
+                   <!-- <div class="col">
+                       <button class="myBtn form-control btn-secondary operator" id="obar" value="(">(</button>
+                   </div>
+                   <div class="col">
+                       <button class="myBtn form-control btn-secondary operator" id="cbar" value=")">)</button>
+                   </div> -->
+               </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <button class="myBtn form-control num" id="seven" value='7'>7</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="eight" value="8">8</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="nine" value="9">9</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control btn-secondary operator" id="add" value="+">+</button>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <button class="myBtn form-control num" id="four" value="4">4</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="five" value="5">5</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="six" value="6">6</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control btn-secondary operator" id="divide" value="/">/</button>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <button class="myBtn form-control num" id="one" value="1">1</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="two" value="2">2</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="three" value="3">3</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control btn-secondary operator" id="sub" value="-">-</button>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col">
+                        <button class="myBtn form-control decimal" id="decimal" value=".">.</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control num" id="zero" value="0">0</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control btn-primary operator" id="equal" value="=">=</button>
+                    </div>
+                    <div class="col">
+                        <button class="myBtn form-control btn-secondary operator" id="multiply" value="*">x</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
